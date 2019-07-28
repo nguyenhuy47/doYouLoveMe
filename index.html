@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do you love me</title>
+</head>
+<body>
+<b><label style="background: #e91e63; font-size: 50px;">Do You Love Me?</label></b><br>
+<input type="button" value="Yes" onclick="yesClick()">
+<input id="btnNo" type="button" value="No" onmouseover="next()" style="position: absolute">
+
+<script>
+    function yesClick(){
+        alert("chuan cmnr");
+    }
+
+    function next() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById('btnNo').style.left = x + 'px';
+        document.getElementById('btnNo').style.top = y + 'px';
+
+    }
+</script>
+</body>
+</html>
